@@ -1,0 +1,19 @@
+package com.Testrunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="/Demoblaze/src/main/resources/Feature/Testcase.feature",
+plugin = {"pretty","html:reports/cucumber-html-report"},
+tags= {"@tc04_Nextpage_demoblaze"},
+glue= {"steps"},
+monochrome=true
+)
+
+
+public class Next_Testrunner {
+
+}
